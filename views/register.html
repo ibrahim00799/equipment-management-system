@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Register Equipment Booking</title>
+</head>
+<body>
+  <h1>Register Equipment Booking</h1>
+<form id="registerForm" action="/register" method="POST">
+  <label for="name">Equipment Name:</label>
+  <input type="text" name="name" id="name" placeholder="e.g. Camera" required>
+
+  <label for="type">Equipment Type:</label>
+  <input type="text" name="type" id="type" placeholder="e.g. Electronics" required>
+
+  <label for="cost">Cost:</label>
+  <input type="number" name="cost" id="cost" placeholder="e.g. 1500" required>
+
+  <label for="room">Room:</label>
+  <input type="text" name="room" id="room" placeholder="e.g. Studio 3" required>
+
+  <label for="registeredBy">Registered By:</label>
+  <input type="text" name="registeredBy" id="registeredBy" placeholder="e.g. Mike" required>
+
+  <button type="submit">Register Equipment</button>
+</form>
+
+<div id="registerResult"></div>
+
+
+  <nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/register-equipment">Register Equipment</a></li>
+    <li><a href="/edit-equipment">Edit Equipment</a></li>
+    <li><a href="/delete-equipment">Delete Equipment</a></li>
+    <li><a href="/search-equipment">Search by Name</a></li>
+    <li><a href="/search-room">Search by Room</a></li>
+    <li><a href="/search-type">Search by Type</a></li>
+    <li><a href="/view-all" class="active">View All</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/help">Help</a></li>
+  </ul>
+</nav>
+
+
+  <script src="/script.js"></script> <!-- Link to the external JavaScript file -->
+</body>
+</html>

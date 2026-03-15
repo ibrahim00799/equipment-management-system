@@ -1,0 +1,171 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+h1 {
+  color: #1a73e8;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 600;
+  border: 2px solid transparent;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  border-color: #1a73e8;
+  background-color: #e8f0fe;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #155fc3;
+}
+
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #1a73e8;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #0b57d0;
+  border-bottom: 2px solid #0b57d0;
+}
+
+h1 {
+  color: #1a73e8;
+  margin-bottom: 30px;
+  font-size: 2.8rem; /* Increased from 2.2rem */
+}
+
+p {
+  font-size: 1.2rem; /* Default size is ~1rem, this makes it larger */
+  line-height: 1.9;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+}
+
+
+.info-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-top: 40px;
+}
+
+.info-card h2 {
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+
+.info-card p,
+.info-card li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+#loadingMessage {
+  text-align: center;
+  font-size: 1.1rem;
+  color: red;
+  margin-top: 10px;
+}
+

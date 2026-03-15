@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Edit Equipment</title>
+</head>
+<body>
+  <h1>Edit Equipment</h1>
+  
+<div id="loadingMessage" style="color: red; text-align: center;"></div>
+
+  <form id="editForm">
+    <input type="hidden" name="id" id="id">
+
+    <label for="name">Equipment Name:</label>
+    <input type="text" name="name" id="name" placeholder="e.g. Camera" required>
+
+    <label for="type">Equipment Type:</label>
+    <input type="text" name="type" id="type" placeholder="e.g. Electronics" required>
+
+    <label for="cost">Cost:</label>
+    <input type="number" name="cost" id="cost" placeholder="e.g. 1500" required>
+
+    <label for="room">Room:</label>
+    <input type="text" name="room" id="room" placeholder="e.g. Studio 3" required>
+
+    <label for="registeredBy">Registered By:</label>
+    <input type="text" name="registeredBy" id="registeredBy" placeholder="e.g. Mike" required>
+
+    <button type="submit">Update Equipment</button>
+  </form>
+
+  <div id="editResult" style="margin-top: 15px;"></div>
+
+  <p><a href="/view-all">← Back to Equipment List Actions to make Edit</a></p>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/register">Register Equipment</a></li>
+      <li><a href="/edit" class="active">Edit Equipment</a></li>
+      <li><a href="/delete-equipment">Delete Equipment</a></li>
+      <li><a href="/search-equipment">Search by Name</a></li>
+      <li><a href="/search-room">Search by Room</a></li>
+      <li><a href="/search-type">Search by Type</a></li>
+      <li><a href="/view-all">View All</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/help">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- Single external script for all functionality -->
+  <script src="/script.js"></script>
+</body>
+</html>
